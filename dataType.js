@@ -21,3 +21,5 @@ var school = "Annada govt high school";
 var admin = true;
 var user = false;
 var pass = true;
+
+

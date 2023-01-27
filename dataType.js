@@ -23,3 +23,12 @@ var user = false;
 var pass = true;
 
 
+// to know the type of value  //typeof
+
+
+var age = 30;
+
+
+console.log(typeof age);
+
+

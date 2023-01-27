@@ -1,5 +1,8 @@
-// how to declear a variable
-
+// how to declare a variable
+// 3 way to declare a variable
+// 1.var
+// 2.let
+// 3.const
 
 // keyword, variable name, assignment operator, value
  var  age = 23;

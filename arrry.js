@@ -1,9 +1,5 @@
 var fruits = ["Banana" , "Apple" , "Guava", "papaya"];
 
-
-
-
-
 // How to accses an element from an array?
 // first element is 0 index
 console.log(fruits[3]) //papaya

@@ -19,7 +19,9 @@ fruits.unshift("coconut")
 console.log(fruits) // [ 'coconut', 'Banana', 'Apple', 'Guava', 'papaya', 'watermalon' ]
 
 
-
+//  ***********************************************************  
+  
+/** ****/
 
 //How to remove an element fron an array?
 //Array.pop() removes the last element from an array

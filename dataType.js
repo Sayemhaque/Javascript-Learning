@@ -1,4 +1,5 @@
-// data tyoes
+// data types 
+//*********/
 
 
 // numeric

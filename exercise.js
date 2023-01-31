@@ -24,3 +24,19 @@ const createStringSimple = (str) =>
 console.log(createStringSimple("helloMiaz"))
 console.log(createStringSimple("Howryours"))
 console.log(createStringSimple("he"))
+
+
+
+
+
+//** Exercise-2 **//
+
+
+
+
+function getFirstHalfStr(str) {
+    const evenStr = str.slice(0, str.length / 2);
+    return evenStr
+}
+
+console.log(getFirstHalfStr("st4ert"))

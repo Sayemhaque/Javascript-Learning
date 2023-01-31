@@ -40,3 +40,23 @@ function getFirstHalfStr(str) {
 }
 
 console.log(getFirstHalfStr("st4ert"))
+
+
+
+/****** 
+**** Exercise-3 ****** 
+ write a javascript program  to concatenate two string except their 
+ first character.
+*******/
+
+
+
+function concatStr (str1,str2) {
+     const strOneWithoutFirstChar = str1.slice(1);
+     const strTwoWithoutFirstChar = str2.slice(1);
+     return strOneWithoutFirstChar.concat(strTwoWithoutFirstChar);
+}
+
+
+console.log(concatStr("sayem","rokib"))
+console.log(concatStr("Backend","Developer"))

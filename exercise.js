@@ -16,3 +16,11 @@ function createString(str) {
 console.log(createString("rakibmia"));
 
 
+//More simple way
+const createStringSimple = (str) => 
+         str.length < 3 ? str : str.slice(0,3)+str.slice(-3)
+
+
+console.log(createStringSimple("helloMiaz"))
+console.log(createStringSimple("Howryours"))
+console.log(createStringSimple("he"))

@@ -33,3 +33,7 @@ var age = 30;
 console.log(typeof age);
 
 
+for(let i = 0; i < 10; i++){
+    console.log(i)
+}
+

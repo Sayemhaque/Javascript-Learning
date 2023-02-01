@@ -16,3 +16,4 @@ console.log(myString.split("")) //will return an array of every alphabet.
   ] */
 console.log(myString.split(".")) //will return an array of 2 sentence.
 //output : [ 'hello i am a string', 'Sayem is my name' ]
+

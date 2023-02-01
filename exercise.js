@@ -12,7 +12,6 @@ function createString(str) {
   return `${firstThreeChar}${LastThreeChar}`;
  }
 }
-
 console.log(createString("rakibmia"));
 
 
@@ -30,10 +29,6 @@ console.log(createStringSimple("he"))
 
 
 //** Exercise-2 **//
-
-
-
-
 function getFirstHalfStr(str) {
     const evenStr = str.slice(0, str.length / 2);
     return evenStr
@@ -44,13 +39,11 @@ console.log(getFirstHalfStr("st4ert"))
 
 
 /****** 
-**** Exercise-3 ****** 
+Exercise-3
+-----------
  write a javascript program  to concatenate two string except their 
  first character.
 *******/
-
-
-
 function concatStr (str1,str2) {
      const strOneWithoutFirstChar = str1.slice(1);
      const strTwoWithoutFirstChar = str2.slice(1);
@@ -60,3 +53,22 @@ function concatStr (str1,str2) {
 
 console.log(concatStr("sayem","rokib"))
 console.log(concatStr("Backend","Developer"))
+
+
+
+
+
+/****** 
+Exercise-4
+-----------
+ Given two values , write a javascript program find out 
+ which one is nearest to 100
+*******/
+function nearestNumber (num1,num2){
+       
+    return (num1 - 100) < (num2 - 100) ? num2 : num1;
+}
+
+
+console.log(nearestNumber(32,99))
+console.log(nearestNumber(28,3))

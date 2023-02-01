@@ -69,6 +69,5 @@ function nearestNumber (num1,num2){
     return (num1 - 100) < (num2 - 100) ? num2 : num1;
 }
 
-
-console.log(nearestNumber(32,99))
-console.log(nearestNumber(28,3))
+const str = "sayem";
+console.log(str.startsWith("r"))

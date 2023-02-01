@@ -6,7 +6,7 @@
 .card-container{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: 200px;
+    grid-template-rows: 200px 200px 200px;
     gap: 30px;
 }
 
@@ -14,10 +14,18 @@
     background-color: rgba(255, 0, 0, 0.521);
     
 }
+.box {
+    --mask:
+      radial-gradient(10.50px at 50% 14.40px,#000 99%,#0000 101%) calc(50% - 18px) 0/36px 51% repeat-x,
+      radial-gradient(10.50px at 50% -5.4px,#0000 99%,#000 101%) 50% 9px/36px calc(51% - 9px) repeat-x,
+      radial-gradient(10.50px at 50% calc(100% - 14.40px),#000 99%,#0000 101%) calc(50% - 18px) 100%/36px 51% repeat-x,
+      radial-gradient(10.50px at 50% calc(100% + 5.40px),#0000 99%,#000 101%) 50% calc(100% - 9px)/36px calc(51% - 9px) repeat-x;
+    -webkit-mask: var(--mask);
+            mask: var(--mask);
+  }
 
-@media screen and (width:667px) {
+  @media only screen and (max-width: 600px) {
     .card-container{
         grid-template-columns: repeat(1,1fr);
     }
-}
-
+  }

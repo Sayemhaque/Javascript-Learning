@@ -38,6 +38,6 @@ fruits[3] = newEle;
 console.log(fruits)   // replaces papaya to Mangoes ,[ 'Banana', 'Apple', 'Guava', 'Mangoes' ] 
 
 // How to find the index of an array element ?
-// Array.indexOf("which element index we wants to know")
+// Array.indexOf("which element index we wants to know") if its return -1 that means this array doesn't have this item.
 var indexOfELement = fruits.indexOf("Apple")
 console.log(indexOfELement) //1

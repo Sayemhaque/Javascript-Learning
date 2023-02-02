@@ -100,3 +100,35 @@ function getCake () {
 
 
 getCake()
+
+/****** 
+Exercise-6
+-----------
+Write a function to reverse a string?
+*******/
+
+
+function reverseStr(str){
+    return str.split("").reverse().join("")
+}
+
+
+console.log(reverseStr("Davdi"))
+
+/****** 
+Exercise-7
+-----------
+Create a fibonacci series
+*******/
+
+const fibo = [0,1]
+
+for(let i = 2; i <= 15; i++){
+    fibo[i] = fibo[i -1] + fibo[i - 2]
+   
+    
+}
+
+console.log(fibo)
+
+

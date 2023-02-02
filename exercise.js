@@ -70,4 +70,33 @@ function nearestNumber (num1,num2){
 }
 
 const str = "sayem";
-console.log(str.startsWith("r"))
+console.log(str.startsWith("r")) // false
+
+
+
+/****** 
+Exercise-5
+-----------
+who will get the cake?
+*******/
+
+const jim = 88;
+const bela = 83;
+const chinku = 93;
+
+
+
+function getCake () {
+    if(jim > bela && jim > chinku){
+        console.log("jim will get the cake")
+    }
+    else if(bela > jim && bela > chinku){
+        console.log("bela will get the cake")
+    }
+    else{
+        console.log("Chinku will get the cake")
+    }
+}
+
+
+getCake()

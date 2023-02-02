@@ -3,29 +3,49 @@
     padding: 0;
 }
 
-.card-container{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: 200px 200px 200px;
-    gap: 30px;
+header{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+  background-color: #FFD43A;
+    align-items: center;
 }
 
-.card{
-    background-color: rgba(255, 0, 0, 0.521);
-    
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
 }
-.box {
-    --mask:
-      radial-gradient(10.50px at 50% 14.40px,#000 99%,#0000 101%) calc(50% - 18px) 0/36px 51% repeat-x,
-      radial-gradient(10.50px at 50% -5.4px,#0000 99%,#000 101%) 50% 9px/36px calc(51% - 9px) repeat-x,
-      radial-gradient(10.50px at 50% calc(100% - 14.40px),#000 99%,#0000 101%) calc(50% - 18px) 100%/36px 51% repeat-x,
-      radial-gradient(10.50px at 50% calc(100% + 5.40px),#0000 99%,#000 101%) 50% calc(100% - 9px)/36px calc(51% - 9px) repeat-x;
-    -webkit-mask: var(--mask);
-            mask: var(--mask);
-  }
 
-  @media only screen and (max-width: 600px) {
-    .card-container{
-        grid-template-columns: repeat(1,1fr);
-    }
-  }
+nav ul li{
+    cursor: pointer;
+    font-weight: bold;
+    color: #582C12;
+}
+
+
+.btn{
+    padding: 10px 25px;
+background-color: #D668E3;
+    color: #582C12;
+    outline: none;
+    cursor: pointer;
+    border: none;
+}
+
+.banner-title{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.testing{
+    color: #582C12;
+    background-color: #D668E3;
+    padding: 20px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+/* will be updated soon stay tune */
+
+/* yes you are updated yaaah */

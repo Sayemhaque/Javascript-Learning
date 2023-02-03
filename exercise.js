@@ -106,8 +106,7 @@ for (let i = 2; i <= 15; i++) {
 
 console.log(fibo);
 
-/****** 
-Exercise-6
+/****** 8
 -----------
 Remove duplicate items from an array
 *******/
@@ -124,17 +123,17 @@ const users = [
   "nasima"];
 
 
-// function uniqueUsers (users) {
-//     const userArray = [];
-//     for(let i = 0; i< users.length; i++){
-//         const user = users[i];
-//         if(userArray.includes(user) !== true){
-//             userArray.push(user)
-//         }
+function uniqueUsers (users) {
+    const userArray = [];
+    for(let i = 0; i< users.length; i++){
+        const user = users[i];
+        if(userArray.includes(user) !== true){
+            userArray.push(user)
+        }
       
-//     }
-//     return userArray
-// }
+    }
+    return userArray
+}
     
 
 
@@ -147,4 +146,27 @@ function uniqueUsers(users) {
     return Array.from(uniqueUsers);
 }
 
-console.log(uniqueUsers(users));
+
+
+/****** 
+Exercise-9
+-----------
+small number from an array
+*******/
+
+
+const number = [12,42,56,32,623,26,221,6,2,6,242,562]
+
+
+function getSmallNumber(number) {
+  let smallNumber = number[0];
+  for(let i = 0; i < number.length; i++){
+    const num = number[i]
+    if(num < smallNumber){
+      smallNumber = num
+    }
+  }
+  return smallNumber
+}
+
+console.log(getSmallNumber(number))

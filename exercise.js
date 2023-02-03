@@ -170,3 +170,29 @@ function getSmallNumber(number) {
 }
 
 console.log(getSmallNumber(number))
+
+
+
+
+/****** 
+Exercise-9
+-----------
+sum of all numbers
+*******/
+
+
+
+const points = [12,10,24]
+
+
+
+function sumPoints (points) {
+  let sum = 0;
+  for(let i = 0; i < points.length; i++){
+    sum += points[i]
+  }
+  return sum;
+}
+
+
+console.log(sumPoints(points))

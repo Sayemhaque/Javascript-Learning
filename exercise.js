@@ -255,3 +255,28 @@ function isAssending(arr){
 
 console.log(isAssending([3,7,3,9,5,6]))
 console.log(isAssending([1,2,3,4,5,6]))
+
+
+
+
+
+
+/****** 
+Exercise-14
+is dessending array?
+*******/
+
+
+function isDessending(arr){
+  for(let i = 0; i < arr.length; i++){
+   if(arr[i + 1] < arr[i]) return true;
+  }
+  return false
+}
+
+
+console.log(isDessending([3,7,3,9,5,6]))
+console.log(isDessending([1,2,3,4,5,6]))
+
+
+

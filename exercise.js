@@ -206,6 +206,13 @@ function getEvenNum (digis) {
    }
    return evenNum.length
 }
-
-
 console.log(getEvenNum(digis))
+
+
+
+function getEvenNumber2 (digis){
+  return digis.filter(x => x % 2 === 0).length;
+}
+
+
+console.log(getEvenNumber2(di))

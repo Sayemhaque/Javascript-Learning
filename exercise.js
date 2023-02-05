@@ -220,7 +220,7 @@ console.log()
 
 
 /****** 
-Exercise-11
+Exercise-12
 *******/
 
 
@@ -234,3 +234,24 @@ function createArrayOfNumbers (num){
 
 
 console.log(getEvenNumber2(createArrayOfNumbers(7)))
+
+
+
+
+
+/****** 
+Exercise-13
+is assending array?
+*******/
+
+
+function isAssending(arr){
+  for(let i = 0; i < arr.length; i++){
+   if(arr[i + 1] < arr[i]) return false;
+  }
+  return true
+}
+
+
+console.log(isAssending([3,7,3,9,5,6]))
+console.log(isAssending([1,2,3,4,5,6]))

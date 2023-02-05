@@ -188,7 +188,7 @@ console.log(sort());
 
 
 /****** 
-Exercise-10
+Exercise-11
 Get even digits 
 *******/
 
@@ -215,4 +215,22 @@ function getEvenNumber2 (digis){
 }
 
 
-console.log(getEvenNumber2(di))
+console.log()
+
+
+
+/****** 
+Exercise-11
+*******/
+
+
+function createArrayOfNumbers (num){
+  let returnArray = [];
+  for(let i = 1; i <= num; i++){
+    returnArray.push(i)
+  }
+  return returnArray
+}
+
+
+console.log(getEvenNumber2(createArrayOfNumbers(7)))

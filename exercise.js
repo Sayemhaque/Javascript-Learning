@@ -120,33 +120,26 @@ const users = [
   "junshna",
   "shopon",
   "shakil",
-  "nasima"];
-
-
-function uniqueUsers (users) {
-    const userArray = [];
-    for(let i = 0; i< users.length; i++){
-        const user = users[i];
-        if(userArray.includes(user) !== true){
-            userArray.push(user)
-        }
-      
-    }
-    return userArray
-}
-    
-
-
-
-console.log(uniqueUsers(users))
-
+  "nasima",
+];
 
 function uniqueUsers(users) {
-    const uniqueUsers = new Set(users);
-    return Array.from(uniqueUsers);
+  const userArray = [];
+  for (let i = 0; i < users.length; i++) {
+    const user = users[i];
+    if (userArray.includes(user) !== true) {
+      userArray.push(user);
+    }
+  }
+  return userArray;
 }
 
+console.log(uniqueUsers(users));
 
+function uniqueUsers(users) {
+  const uniqueUsers = new Set(users);
+  return Array.from(uniqueUsers);
+}
 
 /****** 
 Exercise-9
@@ -154,45 +147,65 @@ Exercise-9
 small number from an array
 *******/
 
-
-const number = [12,42,56,32,623,26,221,6,2,6,242,562]
-
+const number = [12, 42, 56, 32, 623, 26, 221, 6, 2, 6, 242, 562];
 
 function getSmallNumber(number) {
   let smallNumber = number[0];
-  for(let i = 0; i < number.length; i++){
-    const num = number[i]
-    if(num < smallNumber){
-      smallNumber = num
+  for (let i = 0; i < number.length; i++) {
+    const num = number[i];
+    if (num < smallNumber) {
+      smallNumber = num;
     }
   }
-  return smallNumber
+  return smallNumber;
 }
 
-console.log(getSmallNumber(number))
-
-
-
+console.log(getSmallNumber(number));
 
 /****** 
-Exercise-9
+Exercise-10
 -----------
 sum of all numbers
 *******/
 
+const points = [12, 10, 24];
 
-
-const points = [12,10,24]
-
-
-
-function sumPoints (points) {
+function sumPoints(points) {
   let sum = 0;
-  for(let i = 0; i < points.length; i++){
-    sum += points[i]
+  for (let i = 0; i < points.length; i++) {
+    sum += points[i];
   }
   return sum;
 }
 
+console.log(sumPoints(points));
 
-console.log(sumPoints(points))
+function sort() {
+  return points.sort();
+}
+
+console.log(sort());
+
+
+/****** 
+Exercise-10
+Get even digits 
+*******/
+
+
+const digis = [21,5,25,25,72,67,6,6,2,5,377,80,20]
+
+
+function getEvenNum (digis) {
+  let evenNum = [];
+   for(let i = 0; i < digis.length; i++){
+    const digit = digis[i]
+    if(digit % 2 === 0){
+       evenNum.push(digit)
+    }
+   }
+   return evenNum.length
+}
+
+
+console.log(getEvenNum(digis))

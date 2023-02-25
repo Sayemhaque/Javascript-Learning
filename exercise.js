@@ -186,97 +186,89 @@ function sort() {
 
 console.log(sort());
 
-
 /****** 
 Exercise-11
 Get even digits 
 *******/
 
+const digis = [21, 5, 25, 25, 72, 67, 6, 6, 2, 5, 377, 80, 20];
 
-const digis = [21,5,25,25,72,67,6,6,2,5,377,80,20]
-
-
-function getEvenNum (digis) {
+function getEvenNum(digis) {
   let evenNum = [];
-   for(let i = 0; i < digis.length; i++){
-    const digit = digis[i]
-    if(digit % 2 === 0){
-       evenNum.push(digit)
+  for (let i = 0; i < digis.length; i++) {
+    const digit = digis[i];
+    if (digit % 2 === 0) {
+      evenNum.push(digit);
     }
-   }
-   return evenNum.length
+  }
+  return evenNum.length;
 }
-console.log(getEvenNum(digis))
+console.log(getEvenNum(digis));
 
-
-
-function getEvenNumber2 (digis){
-  return digis.filter(x => x % 2 === 0).length;
+function getEvenNumber2(digis) {
+  return digis.filter((x) => x % 2 === 0).length;
 }
 
-
-console.log()
-
-
+console.log();
 
 /****** 
 Exercise-12
 *******/
 
-
-function createArrayOfNumbers (num){
+function createArrayOfNumbers(num) {
   let returnArray = [];
-  for(let i = 1; i <= num; i++){
-    returnArray.push(i)
+  for (let i = 1; i <= num; i++) {
+    returnArray.push(i);
   }
-  return returnArray
+  return returnArray;
 }
 
-
-console.log(getEvenNumber2(createArrayOfNumbers(7)))
-
-
-
-
+console.log(getEvenNumber2(createArrayOfNumbers(7)));
 
 /****** 
 Exercise-13
 is assending array?
 *******/
 
-
-function isAssending(arr){
-  for(let i = 0; i < arr.length; i++){
-   if(arr[i + 1] < arr[i]) return false;
+function isAssending(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i + 1] < arr[i]) return false;
   }
-  return true
+  return true;
 }
 
-
-console.log(isAssending([3,7,3,9,5,6]))
-console.log(isAssending([1,2,3,4,5,6]))
-
-
-
-
-
+console.log(isAssending([3, 7, 3, 9, 5, 6]));
+console.log(isAssending([1, 2, 3, 4, 5, 6]));
 
 /****** 
 Exercise-14
 is dessending array?
 *******/
 
-
-function isDessending(arr){
-  for(let i = 0; i < arr.length; i++){
-   if(arr[i + 1] < arr[i]) return true;
+function isDessending(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i + 1] < arr[i]) return true;
   }
-  return false
+  return false;
 }
 
+console.log(isDessending([3, 7, 3, 9, 5, 6]));
+console.log(isDessending([1, 2, 3, 4, 5, 6]));
 
-console.log(isDessending([3,7,3,9,5,6]))
-console.log(isDessending([1,2,3,4,5,6]))
+/****** 
+Exercise-15
+Largest even number form the array
+*******/
 
+function largestEvenNum(arr) {
+  let largestNum = arr[0];
+  for (let i = 0; i < arr.length; i++) {
+    const number = arr[i];
+    if (number > largestNum && number % 2 === 0) {
+      largestNum = number;
+    }
+  }
+  return largestNum;
+}
 
-
+console.log(largestEvenNum([12, 42, 73, 623, 74, 72, 36, 73, 342]));

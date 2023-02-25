@@ -1,6 +1,6 @@
 // what is a callback function 
 
-// Ans : A function that passed into another function as argument , and later on it gets invoked based on conditon complete its task.
+// Ans : A function that passed into another function as argument , and later on it gets invoked based on conditon complete its task
 
 //Importance of callback function
 

@@ -6,7 +6,9 @@ const data = [
   { id: 3, username: "shakil" },
 ];
 
-const pr = myPromise(data).then((data) => console.log(data));
+const pr = myPromise(data)
+pr.then((data) => displayData(data))
+.catch((error) => console.log(error));
 
 function myPromise(data) {
   return new Promise(function (resolve, reject) {
@@ -15,8 +17,14 @@ function myPromise(data) {
       reject(error);
     } else {
       setTimeout(function () {
-        resolve(data);
-      }, 5000);
+          resolve(data);
+        }, 5000);
     }
   });
 }
+
+
+function displayData (data) {
+    data.map(item => console.log(item))
+}
+

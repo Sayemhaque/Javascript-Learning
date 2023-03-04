@@ -10,3 +10,5 @@ console.log(x) // undefiend
 console.log(a)
 
 var a = 32;
+
+

@@ -79,7 +79,7 @@ const users = [
     city: "New Bangla"
   },]
 console.log(newUser)
-console.log(users)
+console.log(JSON.stringify(users))
 
 const getUsers = () => {
     users.map((user) => {
